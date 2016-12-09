@@ -143,7 +143,8 @@ public final class JIntellitype implements JIntellitypeConstants {
          if (file.exists()) {
             boolean success = file.delete();
             if (!success) {
-               throw new IOException("Could not delete file: " + filePath);
+//               throw new IOException("Could not delete file: " + filePath);
+            	return;
             }
          }
 
